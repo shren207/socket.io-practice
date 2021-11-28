@@ -14,7 +14,7 @@ const handleListen = () => console.log(`Listening on http://localhost:3000`);
 
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
-
+// api와 socket 서버 2개가 있음
 function onSocketClose() {
   console.log("Disconnected from the Browser ❌");
 }

@@ -14,6 +14,7 @@ app.get("/*", (_, res) => res.redirect("/"));
 const httpServer = http.createServer(app);
 const wsServer = new Server(httpServer, {
   cors: {
+    // cors 설정
     origin: ["https://admin.socket.io"],
     credentials: true,
   },
